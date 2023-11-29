@@ -53,9 +53,13 @@ export default function ContactPage() {
         if (nameError || emailError || messageError) {
             return;
         }
+
+        // no backend yet, so just log the form data
+        console.log('Form submitted:', { name, email, message });
         
         // Display success message if all is good
         setSentMessage("Message sent!");
+        
         // Clear form fields
         setName('');
         setEmail('');
@@ -117,6 +121,7 @@ export default function ContactPage() {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                <br></br>
 
                 <h4>{sentMessage}</h4>
 
