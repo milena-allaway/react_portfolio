@@ -11,7 +11,7 @@ import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import AboutPage from './pages/AboutPage';
 // import PortfolioPage from './pages/PortfolioPage';
-// import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/ContactPage';
 // import ResumePage from './pages/ResumePage';
 
 // routes and corresponding components
@@ -29,10 +29,10 @@ const router = createBrowserRouter([
       //   path: '/portfolio',
       //   element:  <PortfolioPage />,
       // },
-      // {
-      //   path: '/contact',
-      //   element: <ContactPage />,
-      // },
+      {
+        path: '/contact',
+        element: <ContactPage />,
+      },
       // {
       //   path: '/resume',
       //   element: <ResumePage />,
