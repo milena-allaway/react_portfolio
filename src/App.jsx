@@ -1,12 +1,15 @@
 // Desc: This is the main app component
+// import React from 'react';
 import './App.css';
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Nav';
+// import Navigation from './components/Navigation';
+import Header from './components/Header';
 
 function App() {
   return (
     <> 
-        <Nav />
+        <Header />
+        {/* <Navigation /> */}
         <Outlet />
     
     </>

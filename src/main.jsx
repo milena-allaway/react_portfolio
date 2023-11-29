@@ -1,4 +1,5 @@
 // Desc: This is the main file for the react-portfolio app
+// import React from 'react';
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -8,11 +9,10 @@ import './index.css'
 // import pages that router will use
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import PortfolioPage from './pages/PortfolioPage';
-import ContactPage from './pages/ContactPage';
-import ResumePage from './pages/ResumePage';
+// import PortfolioPage from './pages/PortfolioPage';
+// import ContactPage from './pages/ContactPage';
+// import ResumePage from './pages/ResumePage';
 
 // routes and corresponding components
 const router = createBrowserRouter([
@@ -23,24 +23,20 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
-      },
-      {
-        path: '/about',
         element: <AboutPage />,
       },
-      {
-        path: '/portfolio',
-        element:  <PortfolioPage />,
-      },
-      {
-        path: '/contact',
-        element: <ContactPage />,
-      },
-      {
-        path: '/resume',
-        element: <ResumePage />,
-      },
+      // {
+      //   path: '/portfolio',
+      //   element:  <PortfolioPage />,
+      // },
+      // {
+      //   path: '/contact',
+      //   element: <ContactPage />,
+      // },
+      // {
+      //   path: '/resume',
+      //   element: <ResumePage />,
+      // },
     ],
   },
 ]);
