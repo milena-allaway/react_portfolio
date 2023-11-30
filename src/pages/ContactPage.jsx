@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Container } from 'react-bootstrap';
+import "../style/style.css";
 
 export default function ContactPage() {
 
@@ -59,7 +60,7 @@ export default function ContactPage() {
         
         // Display success message if all is good
         setSentMessage("Message sent!");
-        
+
         // Clear form fields
         setName('');
         setEmail('');
@@ -68,7 +69,7 @@ export default function ContactPage() {
     };
 
     return (
-
+        <Container>
         <div className="container text-center">
             <h1>Contact Me</h1>
             <Form onSubmit={handleFormSubmit}>
@@ -127,5 +128,6 @@ export default function ContactPage() {
 
             </Form>
         </div>
+        </Container>
     );
 }

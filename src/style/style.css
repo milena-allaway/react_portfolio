@@ -1,0 +1,16 @@
+:root {
+    --apricot: #ffcdb2ff;
+    --melon: #ffb4a2ff;
+    --salmon-pink: #e5989bff;
+    --old-rose: #b5838dff;
+    --dim-gray: #6d6875ff;
+  }
+
+.sticky-top {
+    width: 100%;
+    /* z-index: 1000; Adjust the z-index as needed */
+}
+
+/* .header-section {
+    /* Add any custom styling for the header container */
+} */
