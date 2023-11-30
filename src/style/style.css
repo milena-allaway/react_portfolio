@@ -1,16 +1,30 @@
+
 :root {
     --apricot: #ffcdb2ff;
     --melon: #ffb4a2ff;
     --salmon-pink: #e5989bff;
     --old-rose: #b5838dff;
     --dim-gray: #6d6875ff;
-  }
+}
 
 .sticky-top {
     width: 100%;
-    /* z-index: 1000; Adjust the z-index as needed */
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    border-bottom: solid 3px var(--old-rose);
 }
 
-/* .header-section {
-    /* Add any custom styling for the header container */
-} */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Ballet', cursive;
+    font-size: 3em;
+}
+
+.resume-section, .about, .contact {
+    margin-top: 100px;
+}

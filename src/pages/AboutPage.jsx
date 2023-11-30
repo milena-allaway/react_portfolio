@@ -3,7 +3,7 @@ import "../style/style.css";
 
 export default function AboutMePage() {
   return (
-    <Container>
+    <Container className='about'>
       <div>
         <h1>About Me</h1>
         <p>
