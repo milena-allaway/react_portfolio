@@ -5,7 +5,6 @@
     --salmon-pink: #e5989bff;
     --old-rose: #b5838dff;
     --dim-gray: #6d6875ff;
-    display: flex-box;
 }
 
 body {
@@ -47,3 +46,35 @@ body {
     border-bottom: 3px dotted var(--old-rose);
 }
 
+.nav-link {
+    color: var (--dim-gray);
+}
+
+.nav-link:hover {
+    color: var(--salmon-pink) !important;
+}
+
+.active {
+    color: var(--old-rose) !important;
+    font-weight: 500;
+    text-shadow: 2px 2px var(--melon);
+}
+
+.a:hover {
+    color: var(--melon);
+}
+
+.f-icon {
+    color: var(--old-rose);
+    margin: 10px 10px;
+    
+}
+
+.f-icon:hover {
+    color: var(--melon);
+}
+
+.f-note {
+    margin: 5px 5px;
+    text-shadow: 2px 2px var(--melon);
+}
