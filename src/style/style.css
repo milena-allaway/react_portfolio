@@ -5,26 +5,45 @@
     --salmon-pink: #e5989bff;
     --old-rose: #b5838dff;
     --dim-gray: #6d6875ff;
+    display: flex-box;
 }
 
-.sticky-top {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    border-bottom: solid 3px var(--old-rose);
+body {
+    margin: 0;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--apricot);
+    color: var(--dim-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-align: center;
 }
 
 .navbar {
-    padding: 15px 0;
+    padding: 15px;
+
 }
 
-.navbar-brand {
-    font-weight: bold;
+.headerName {
+    padding-top: 25px;
+    font-weight: 700;
     font-family: 'Ballet', cursive;
-    font-size: 3em;
+    font-size: 4em;
+    color: var(--old-rose);
+    text-shadow: 2px 2px var(--melon);
 }
 
-.resume-section, .about, .contact {
-    margin-top: 100px;
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 3px dotted var(--old-rose);
 }
+
