@@ -10,4 +10,7 @@ This portfolio showcases some of my projects and is built using React.
 * https://react-icons.github.io/react-icons/
 * https://www.npmjs.com/package/react-icons
 * https://www.linkedin.com/pulse/what-relnoopener-noreferrer-madhu-sudanan/
+* https://legacy.reactjs.org/docs/events.html#focus-events
+* https://legacy.reactjs.org/docs/events.html#onblur
+* https://react.dev/reference/react-dom/components/common#common-props
 * https://chat.openai.com/

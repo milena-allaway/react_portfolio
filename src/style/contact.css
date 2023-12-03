@@ -1,0 +1,78 @@
+:root {
+    --apricot: #ffcdb2ff;
+    --melon: #ffb4a2ff;
+    --salmon-pink: #e5989bff;
+    --old-rose: #b5838dff;
+    --dim-gray: #6d6875ff;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px var(--salmon-pink);
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 1em;
+    border: 3px solid var(--dim-gray);
+    background-color: var(--salmon-pink);
+    border-radius: 1em;
+    text-align: left;
+    color: var(--dim-gray);
+    margin: 20px auto;
+}
+
+.form-label {
+    text-align: left;
+}
+
+#formName, #formEmail, #formMessage {
+    background-color: var(--melon);
+}
+
+.form-control {
+    border-color: var(--apricot);
+    border-width: 3px;
+    box-shadow: 0 0 10px var(--melon);
+}
+
+.form-control.is-invalid {
+    border-color: #eb69c9;
+    box-shadow: 0 0 10px #d851b4;
+}
+
+.invalid-feedback {
+    color: var(--apricot);
+    font-size: 1em;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--apricot);
+    border-color: var(--melon);
+    border-width: 4px;
+    box-shadow: 0 0 10px var(--melon);
+    color: var(--dim-gray);
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin: 0 auto;
+    padding: .5em 1em;
+}
+
+.btn:hover {
+    background-color: var(--melon);
+    border-color: var(--apricot);
+    color: var(--apricot);
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--dim-gray);
+    text-shadow: 0 0 10px var(--melon);
+    
+}
