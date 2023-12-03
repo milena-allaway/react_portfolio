@@ -1,3 +1,4 @@
+import '../style/projects.css';
 import ProjectCard from '../components/Projects';
 
 export default function Portfolio() {
@@ -45,7 +46,7 @@ export default function Portfolio() {
     <div className="container my-5">
       <div className="row">
         {projects.map((project, index) => (
-          <div key={index} className="col-md-4 mb-4">
+          <div key={index} className="col-md-4 mb-4 projects">
             <ProjectCard {...project} />
           </div>
         ))}

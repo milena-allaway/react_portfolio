@@ -2,6 +2,7 @@
 import { Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FaGithubSquare } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import '../style/projects.css';
 
 
 const ProjectCard = ({ title, imageSrc, siteLink, githubLink }) => {
@@ -19,7 +20,7 @@ const ProjectCard = ({ title, imageSrc, siteLink, githubLink }) => {
           }
         >
           <a href={siteLink} target="_blank" rel="noopener noreferrer">
-            <CgWebsite size={30} className="mx-1" />
+            <CgWebsite size={40} className="mx-2" />
           </a>
         </OverlayTrigger>
         <OverlayTrigger
@@ -31,7 +32,7 @@ const ProjectCard = ({ title, imageSrc, siteLink, githubLink }) => {
           }
         >
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <FaGithubSquare size={30} className="mx-1" />
+            <FaGithubSquare size={40} className="mx-2" />
           </a>
 
         </OverlayTrigger>

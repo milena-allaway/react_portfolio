@@ -29,6 +29,17 @@ body {
 
 }
 
+.navbar-toggler {
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: var(--melon);
+}
+
+.navbar-toggler:hover {
+    box-shadow: 0 0 20px var(--salmon-pink);
+    border-color: var(--old-rose);
+}
+
 .headerName {
     padding-top: 25px;
     font-weight: 700;

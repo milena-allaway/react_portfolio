@@ -1,0 +1,46 @@
+/* allow wrapping of cards and space evenly */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* set image size */
+.projects img {
+    max-height: 200px;
+    max-width: 300px;
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 12px;
+
+}
+
+.card {
+    background-color: var(--salmon-pink);
+    border-radius: 10px;
+    border: 3px solid var(--dim-gray);
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px var(--melon);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card:hover {
+    background-color: var(--melon);
+    border: 3px solid var(--old-rose);
+    box-shadow: 0 0 10px var(--salmon-pink);
+}
+/* style icons */
+svg {
+    color: var(--dim-gray);
+}
+
+svg:hover {
+    color: var(--apricot);
+}
