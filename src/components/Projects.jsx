@@ -18,8 +18,8 @@ const ProjectCard = ({ title, imageSrc, siteLink, githubLink }) => {
             </Tooltip>
           }
         >
-          <a href={siteLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary mx-1">
-            <i className="bi bi-globe"></i>
+          <a href={siteLink} target="_blank" rel="noopener noreferrer">
+            <CgWebsite size={30} className="mx-1" />
           </a>
         </OverlayTrigger>
         <OverlayTrigger
@@ -30,9 +30,10 @@ const ProjectCard = ({ title, imageSrc, siteLink, githubLink }) => {
             </Tooltip>
           }
         >
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary mx-1">
-            <i className="bi bi-github"></i>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <FaGithubSquare size={30} className="mx-1" />
           </a>
+
         </OverlayTrigger>
       </Card.Body>
     </Card>
