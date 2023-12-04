@@ -28,42 +28,42 @@ export default function ContactPage() {
     }
   };
 
-// set up validation functions
-const validateName = () => {
-  if (!name.trim()) {
-    setNameError("Your name is required!");
-  }
-};
+  // set up validation functions
+  const validateName = () => {
+    if (!name.trim()) {
+      setNameError("Your name is required!");
+    }
+  };
 
-const validateEmail = () => {
-  if (!email.trim()) {
-    setEmailError("An e-mail is required!");
-  } else if (!email.includes("@")) {
-    setEmailError("Please enter a valid email address!");
-  }
-};
+  const validateEmail = () => {
+    if (!email.trim()) {
+      setEmailError("An e-mail is required!");
+    } else if (!email.includes("@")) {
+      setEmailError("Please enter a valid email address!");
+    }
+  };
 
-const validateMessage = () => {
-  if (!message) {
-    setMessageError("A message is required!");
-  }
-};
+  const validateMessage = () => {
+    if (!message) {
+      setMessageError("A message is required!");
+    }
+  };
 
-// set up blur event handlers, which trigger validation
-// when input field loses focus
-// the user will see an error message when they exit a field
-// that has invalid input
-const handleNameBlur = () => { 
-  validateName();
-};
+  // set up blur event handlers, which trigger validation
+  // when input field loses focus
+  // the user will see an error message when they exit a field
+  // that has invalid input
+  const handleNameBlur = () => {
+    validateName();
+  };
 
-const handleEmailBlur = () => {
-  validateEmail();
-};
+  const handleEmailBlur = () => {
+    validateEmail();
+  };
 
-const handleMessageBlur = () => {
-  validateMessage();
-};
+  const handleMessageBlur = () => {
+    validateMessage();
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ const handleMessageBlur = () => {
     setNameError("");
     setEmailError("");
     setMessageError("");
-    
+
     // validate form data
     validateName();
     validateEmail();
@@ -155,7 +155,7 @@ const handleMessageBlur = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <Button type="submit">
+          <Button variant="none" type="submit">
             Submit
           </Button>
           <br></br>

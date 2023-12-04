@@ -10,7 +10,7 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 2px 2px var(--salmon-pink);
 }
-
+/* style main form container */
 form {
     margin: 0 auto;
     max-width: 500px;
@@ -22,26 +22,26 @@ form {
     color: var(--dim-gray);
     margin: 20px auto;
 }
-
+/* style labels */
 .form-label {
     text-align: left;
 }
-
+/* style input fields */
 #formName, #formEmail, #formMessage {
     background-color: var(--melon);
 }
-
+/* style valid form fields */
 .form-control {
     border-color: var(--apricot);
     border-width: 3px;
     box-shadow: 0 0 10px var(--melon);
 }
-
+/* style invalid form fields */
 .form-control.is-invalid {
     border-color: #eb69c9;
     box-shadow: 0 0 10px #d851b4;
 }
-
+/* style invalid feedback text*/
 .invalid-feedback {
     color: var(--apricot);
     font-size: 1em;

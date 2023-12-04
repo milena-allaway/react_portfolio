@@ -39,8 +39,19 @@
 /* style icons */
 svg {
     color: var(--dim-gray);
+
 }
 
 svg:hover {
     color: var(--apricot);
+}
+
+/* style tooltips */
+.tooltip-inner {
+    background-color: var(--melon);
+    color: var(--dim-gray);
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px solid var(--dim-gray);
 }
