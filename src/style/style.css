@@ -23,7 +23,8 @@ body {
     -webkit-text-size-adjust: 100%;
     text-align: center;
 }
-
+/*********************************************************************************************************************/
+/* Nav and Header */
 .navbar {
     padding: 15px;
 
@@ -73,6 +74,28 @@ body {
 
 .a:hover {
     color: var(--melon);
+}
+/*********************************************************************************************************************/
+/*About Me*/
+
+.photo-container {
+    border: 3px solid var(--salmon-pink); 
+    box-shadow: 0 0 10px var(--dim-gray); 
+    max-width: 300px;
+    margin: auto;
+    border-radius: 8px;
+  }
+  
+.photo {
+    width: 100%; 
+    height: auto; 
+    border-radius: 7px;
+}
+/*********************************************************************************************************************/
+/*Footer*/
+
+footer {
+    margin-top: 25px;
 }
 
 .f-icon {
