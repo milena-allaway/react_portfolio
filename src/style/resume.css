@@ -1,0 +1,31 @@
+.btn {
+    max-width: 300px;
+    font-size: .8em;
+}
+
+.resume-text {
+    font-size: 1.4em;
+    text-shadow: 2px 2px var(--melon);
+}
+
+h3 {
+    font-size: 1.5em;
+    text-shadow: 2px 2px var(--melon);
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: solid 4px var(--melon);
+    box-shadow: 0 0 10px var(--melon);
+    background-color: transparent;
+    color: var(--dim-gray);
+    font-size: 1em;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.list-group-item:hover {
+    background-color: var(--salmon-pink);
+    color: var(--apricot);
+
+}

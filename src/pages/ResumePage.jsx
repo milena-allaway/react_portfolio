@@ -1,6 +1,6 @@
-import "../style/style.css";
+import { Container, Row, Col } from "react-bootstrap";
 import PDF from "../assets/milenaWheatcroftResume.pdf";
-import { Container } from "react-bootstrap";
+import "../style/resume.css";
 
 export default function Resume() {
   return (
@@ -9,38 +9,50 @@ export default function Resume() {
         <h1>Resume</h1>
         <br />
 
-        {/* Link to Downloadable Resume */}
-        <p>
-          Download my resume{" "}
-          <a href={PDF} download className="btn btn-outline-dark">
-            here
-          </a>
-        </p>
-        <br />
+        <Row>
+          <Col xs={12} md={6}>
+            {/* Front-end Technologies */}
+            <div>
+              <h3>Front-end Technologies</h3>
+              <ul className="list-group">
+                <li className="list-group-item">React.js</li>
+                <li className="list-group-item">JavaScript, jQuery</li>
+                <li className="list-group-item">HTML, CSS</li>
+                <li className="list-group-item">Bootstrap, Materialize CSS</li>
+              </ul>
+            </div>
+          </Col>
 
-        {/* List of Developer Proficiencies */}
-        <div>
-          <h3>Technical Proficiencies</h3>
-          <ul className="list-group">
-            <li className="list-group-item">React.js, Node.js, Express.js</li>
-            <li className="list-group-item">JavaScript, jQuery, HTML, CSS</li>
-            <li className="list-group-item">
-              MySql, MongoDB, IndexedDB, GraphQL
-            </li>
-            <li className="list-group-item">Bootstrap, Materialize CSS</li>
-            <li className="list-group-item">
-              Git, GitHUb, Heroku, Render, Netlify
-            </li>
-            <li className="list-group-item">RESTful APIs, JSON</li>
-            <li className="list-group-item">MERN Stack</li>
-            <li className="list-group-item">
-              Progressive Web Applications (PWAs)
-            </li>
-            <li className="list-group-item">
-              Object Oriented Programming (OOP)
-            </li>
-          </ul>
-        </div>
+          <Col xs={12} md={6}>
+            {/* Back-end Technologies */}
+            <div>
+              <h3>Back-end Technologies</h3>
+              <ul className="list-group">
+                <li className="list-group-item">Node.js, Express.js</li>
+                <li className="list-group-item">
+                  MySql, MongoDB, IndexedDB, GraphQL
+                </li>
+                <li className="list-group-item">RESTful APIs, JSON</li>
+                <li className="list-group-item">MERN Stack</li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+
+        {/* Link to Downloadable Resume */}
+        <Row className="mt-4">
+          <Col
+            xs={12}
+            className="d-flex align-items-center justify-content-center"
+          >
+            <div className="resume-text">
+              <p>Check out my resume!</p>
+              <a href={PDF} download className="btn btn-outline-dark">
+                Download Here
+              </a>
+            </div>
+          </Col>
+        </Row>
       </div>
     </Container>
   );
