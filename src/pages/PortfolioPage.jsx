@@ -39,6 +39,12 @@ export default function Portfolio() {
       siteLink: "https://milena-allaway.github.io/password_generator/",
       githubLink: "https://github.com/milena-allaway/password_generator",
     },
+    {
+      title: "The CodeX",
+      imageSrc: "./created_snippet-1.png",
+      siteLink: "https://the-codex.onrender.com/",
+      githubLink: "https://github.com/theApostols/the-codex",
+    },
   ];
 
   return (
